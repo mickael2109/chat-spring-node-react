@@ -1,0 +1,94 @@
+####################### MESSAGE###########################################################################
+### SEND MESSAGE (Mickael)
+POST http://localhost:5050/sendmessage
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMiIsInVzZXJuYW1lIjoibWlja2FlbHJrdDIwQGdtYWlsLmNvbSIsImlhdCI6MTcyNzYzMzAwNSwiZXhwIjoxNzI3NjM2NjA1fQ.H9OwsdACnkxLGiR8z7ut0RCJ4n9LnbLK7OchVabOQUA",
+    "content": "tsin tsin eee haha",
+    "receiverId": "3"
+}
+
+
+### SEND MESSAGE (Nananjy)
+POST http://localhost:5050/sendmessage
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMiIsInVzZXJuYW1lIjoibWlja2FlbHJrdDIwQGdtYWlsLmNvbSIsImlhdCI6MTcyNzYwMDk5MywiZXhwIjoxNzI3NjA0NTkzfQ.ejyMMVGy9VyZ109DAPZtpiLvr5tO3Rr_VGPfsc8rqqM",
+    "content": "fy aaaa",
+    "receiverId": "3"
+}
+
+
+### SEND MESSAGE (Fitiavana)
+POST http://localhost:5050/sendmessage
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMyIsInVzZXJuYW1lIjoiZml0aWF2YW5hQGdtYWlsLmNvbSIsImlhdCI6MTcyNzYzNDI1NiwiZXhwIjoxNzI3NjM3ODU2fQ.2JcZol8aFeK69fXWnm-_lfugnauc0DjRhR6aEQVPsNI",
+    "content": "in edzad?",
+    "receiverId": "2"
+}
+
+
+### GET MESSAGE USER (Fitiavana)
+POST http://localhost:5050/mymessage/3
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMyIsInVzZXJuYW1lIjoiZml0aWF2YW5hQGdtYWlsLmNvbSIsImlhdCI6MTcyNzYzNDI1NiwiZXhwIjoxNzI3NjM3ODU2fQ.2JcZol8aFeK69fXWnm-_lfugnauc0DjRhR6aEQVPsNI"
+}
+
+
+
+
+
+####################### USER ############################################################################
+### CREATE COMPTE
+POST http://localhost:5050/signup
+Content-Type: application/json
+
+{
+    "username": "fitiavana@gmail.com",
+    "password": "Fitiavana0@"
+}
+
+
+### LOGIN
+POST http://localhost:5050/signin
+Content-Type: application/json
+
+{
+    "username": "fitiavana@gmail.com",
+    "password": "Fitiavana0@"
+}
+
+
+### LOGOUT
+POST http://localhost:5050/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMyIsInVzZXJuYW1lIjoiZml0aWF2YW5hQGdtYWlsLmNvbSIsImlhdCI6MTcyNzYwMjkxOCwiZXhwIjoxNzI3NjA2NTE4fQ.cl9apgZ4iWF3CVsKEV1TLWY8owT4QyMP2f3jwM_0eJ4" 
+}
+
+
+### GET INFO USER BY TOKEN
+POST http://localhost:5050/getinfouser
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMSIsInVzZXJuYW1lIjoibmFuYWp5QGdtYWlsLmNvbSIsImlhdCI6MTcyNzU5NjQ2MiwiZXhwIjoxNzI3NjAwMDYyfQ.NNhVRa3W-x6TVLhZyPRUIqYJmKM0VH4aL0yI7mtk5Cc" 
+}
+
+
+### GET INFO USER BY TOKEN
+GET http://localhost:5050/getinfouser/1
+Content-Type: application/json
+
+
+
+
+### GET ALL USER
+GET http://localhost:5050/users
